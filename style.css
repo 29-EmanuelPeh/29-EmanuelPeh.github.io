@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px dotted rgb(0, 0, 0); */
+    font-family: sans-serif;
+  }
+
+body {
+    background-color: azure;
+}
+
+.home-top {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color:cadetblue;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.home-top header, .home-top nav{
+    padding-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    padding: 10px;
+}
+
+button{
+    padding: 5px;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    align-content: center;
+    border: 3px solid orange
+}
+
+.page div{
+    padding: 10px;
+}
+
+#page1 {
+    
+}
+
+#page2 {
+    
+}
+
+#page3 {
+    
+}
+
+#page1-box1 {
+    background-color: aqua;
+}
+
+#page1-box2 {
+    background-color: pink;
+}
+
+/*for responsive menu*/
+#hamIcon {
+    display: none;
+}
+
+.menuShow {
+    display: block;
+}
+
+@media screen and (max-width:800px) {
+    nav ul li {
+        display: block;
+    }
+
+    /*make a menu items vertical*/
+    #hamIcon {
+        display: block;
+    }
+
+    /* unhide menu icon */
+    nav ul {
+        display: none;
+    }
+
+    /*hide the menu item list*/
+}
