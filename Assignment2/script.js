@@ -5,9 +5,9 @@ const page3btn = document.querySelector("#page3btn");
 var allpages = document.querySelectorAll(".page");
 //select all subtopic pages
 console.log(allpages);
-show(3);
-// Initial check on page load
-handleScroll();
+show(2);
+// // Initial check on page load
+reveal();
 
 function hideall() { //function to hide all pages
     for (let onepage of allpages) { //go through all subtopic pages
@@ -47,32 +47,25 @@ function toggleMenus() { /*open and close menu*/
 }//can optimize using toggle class with css transitions
 
 
-
-// Check if element is in viewport
-function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
-
-// Handle scroll event
-function handleScroll() {
-    const sections = document.querySelectorAll('.section');
-
-    sections.forEach((div) => {
-        if (isElementInViewport(div)) {
-            div.classList.add('fade-in');
-        }
-        else {
-            div.classList.remove('fade-in');
-            div.classList.add('fade-out');
-        }
-    });
-}
-
 // Attach scroll event listener
-window.addEventListener('scroll', handleScroll);
+window.addEventListener('scroll', reveal);
+
+//reveal when scrolling function
+function reveal() {
+    var reveals = document.querySelectorAll('.reveal');
+
+    for(var i = 0; i < reveals.length; i++){
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if (revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+            reveals[i].classList.remove('inactive');
+        }
+        else{
+            reveals[i].classList.remove('active');
+            reveals[i].classList.add('inactive');
+        }
+    }
+}
