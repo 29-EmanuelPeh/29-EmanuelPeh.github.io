@@ -5,7 +5,7 @@ const page3btn = document.querySelector("#page3btn");
 var allpages = document.querySelectorAll(".page");
 //select all subtopic pages
 console.log(allpages);
-show(1);
+show(3);
 // Initial check on page load
 handleScroll();
 
