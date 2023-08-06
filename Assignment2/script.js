@@ -6,6 +6,8 @@ var allpages = document.querySelectorAll(".page");
 //select all subtopic pages
 console.log(allpages);
 show(1);
+// Initial check on page load
+handleScroll();
 
 function hideall() { //function to hide all pages
     for (let onepage of allpages) { //go through all subtopic pages
@@ -32,6 +34,7 @@ page3btn.addEventListener("click", function () {
     show(3);
 });
 
+
 /*for hamMenu */
 const hamBtn = document.querySelector("#hamIcon");
 hamBtn.addEventListener("click", toggleMenus);
@@ -42,3 +45,34 @@ function toggleMenus() { /*open and close menu*/
     //     menuItemsList.style.display = "none";
     // else menuItemsList.style.display = "block";
 }//can optimize using toggle class with css transitions
+
+
+
+// Check if element is in viewport
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Handle scroll event
+function handleScroll() {
+    const sections = document.querySelectorAll('.section');
+
+    sections.forEach((div) => {
+        if (isElementInViewport(div)) {
+            div.classList.add('fade-in');
+        }
+        else {
+            div.classList.remove('fade-in');
+            div.classList.add('fade-out');
+        }
+    });
+}
+
+// Attach scroll event listener
+window.addEventListener('scroll', handleScroll);
