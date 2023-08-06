@@ -11,14 +11,9 @@ body {
     background-color: azure;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav li {
+nav ul li {
     display: inline-block;
-    margin-right: 20px;
+    padding: 10px;
 }
 
 nav a {
@@ -40,11 +35,6 @@ nav a {
     padding-top: 20px;
 }
 
-nav ul li {
-    display: inline;
-    padding: 10px;
-}
-
 /* Animated Button */
 .btn {
     display: inline-block;
@@ -59,15 +49,6 @@ nav ul li {
     background-color: #0056b3;
 }
 
-.page {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-around;
-    align-content: center;
-    border: 3px solid orange;
-}
-
 /* for scrolling to fade in */
 .section {
     opacity: 1;
@@ -78,10 +59,42 @@ nav ul li {
     opacity: 1;
 }
 
+.list {
+    display: inline-block;
+}
+
+.list li {
+    padding: 15px;
+    text-align: left;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.content-box {
+    padding: 15px;
+}
+
 #page1 {}
 
 #page1-box1 {
+    display: flex;
+    flex-direction: row;
+}
+
+#page1-box1-part1 {
     background-color: rgb(8, 95, 95);
+    flex-basis: 50%;
+
+}
+#page1-box1-part2 {
+    background-color: rgb(18, 21, 184);
+    flex-basis: 50%;
 }
 
 #page1-box2 {
