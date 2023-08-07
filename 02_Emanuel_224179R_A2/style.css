@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px dotted rgb(0, 0, 0); */
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+body {
+    background-color: rgb(92, 146, 146);
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul li {
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.5;
+    padding-top: 10px;
+    font-size: 120%;
+}
+
+h1 {
+    font-size: 500%;
+    color: #646DDC;
+}
+
+h2 {
+    font-size: 300%;
+    color: #4D8DE4;
+}
+
+img {
+    width: 100%;
+}
+
+.home-top {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #0f0f18;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.home-top header,
+.home-top nav {
+    padding-top: 20px;
+}
+
+#hamIcon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+/* Animated Button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2a3b90;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* mouse hover animation */
+.btn:hover {
+    background-color: #0c0d49;
+}
+
+.list {
+    display: inline-block;
+
+}
+
+.list li {
+    padding: 5px;
+    text-align: left;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.content-box {
+    padding: 5%;
+}
+
+/* reveal when scrolling */
+.reveal {
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
+.reveal.inactive {
+    opacity: 0;
+}
+
+
+/* PAGE 1 */
+/* box content 1 */
+#page1-box1 {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#page1-box1-part1 {
+    flex-basis: 60%;
+}
+#page1-box1-part2 {
+    margin: auto;
+    flex-basis: 40%;
+    padding: 0;
+}
+
+/* box content 2 */
+#page1-box2 {
+    display: flex;
+    background-color: #0A0E4F;
+}
+#page1-box2-part1 {
+    flex-basis: 50%;
+    text-align: left;
+}
+#page1-box2-part2 {
+    margin: auto;
+    flex-basis: 50%;
+}
+
+
+/* PAGE 2 */
+/* box content 1 */
+#page2-box1 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(8, 95, 95);
+    padding: 10%;
+    margin: 10%;
+}
+/* box content 2 */
+#page2-box2 {
+    display: flex;
+    background-color: #014778;
+    align-items: center;
+}
+#page2-box2-part1 {
+    text-align: left;
+    flex-basis: 60%;
+}
+#page2-box2-part2 {
+    margin: auto;
+    flex-basis: 40%;
+}
+/* box content 3 */
+#page2-box3 {
+    display: flex;
+    background-color: #012A78;
+    align-items: center;
+}
+#page2-box3-part1 {
+    text-align: right;
+    flex-basis: 60%;
+}
+#page2-box3-part2 {
+    margin: auto;
+    flex-basis: 40%;
+}
+/* box content 4 */
+#page2-box4 {
+    display: flex;
+    background-color: #010D78;
+    align-items: center;
+}
+#page2-box4-part1 {
+    text-align: left;
+    flex-basis: 60%;
+}
+#page2-box4-part2 {
+    margin: auto;
+    flex-basis: 40%;
+}
+/* box content 5 */
+#page2-box5 {
+    display: flex;
+    background-color: #220070;
+    align-items: center;
+}
+#page2-box5-part1 {
+    text-align: right;
+    flex-basis: 60%;
+}
+#page2-box5-part2 {
+    margin: auto;
+    flex-basis: 40%;
+}
+/* box content 6 */
+#page2-box6 {
+    display: flex;
+    background-color: #3F0070;
+    align-items: center;
+}
+#page2-box6-part1 {
+    text-align: left;
+    flex-basis: 60%;
+}
+#page2-box6-part2 {
+    margin: auto;
+    flex-basis: 40%;
+}
+/* box content 7 */
+#page2-box7 {
+    display: flex;
+    background-color: #5D0070;
+    align-items: center;
+}
+#page2-box7-part1 {
+    text-align: right;
+    flex-basis: 60%;
+}
+#page2-box7-part2 {
+    margin: auto;
+    flex-basis: 40%;
+}
+
+
+/* PAGE 3 */
+/* box content 1 */
+#page3-box1 {
+    background-color: rgb(57, 8, 102);
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
+#page3-box1-part1 {
+    padding-bottom: 5%;
+}
+#page3-box1-part2 {
+    padding-top: 5%;
+    font-size: 200%;
+}
+/* box content 2 */
+#page3-box2 {
+    background-color: #460058;
+    display: flex;
+}
+#page3-box2-part1 {
+    text-align: right;
+    flex-basis: 40%;
+}
+#page3-box2-part2 {
+    margin: auto;
+    flex-basis: 60%;
+}
+/* box content 3 */
+#page3-box3 {
+    background-color: #580042;
+    display: flex;
+}
+#page3-box3-part1 {
+    text-align: right;
+    flex-basis: 40%;
+}
+#page3-box3-part2 {
+    margin: auto;
+    flex-basis: 60%;
+}
+#image-selfloath {
+    max-width: 50%;
+}
+/* box content 4 */
+#page3-box4 {
+    background-color: #58001D;
+    display: flex;
+}
+#page3-box4-part1 {
+    text-align: right;
+    flex-basis: 40%;
+}
+#page3-box4-part2 {
+    margin: auto;
+    flex-basis: 60%;
+}
+/* box content 5 */
+#page3-box5 {
+    background-color: #470000;
+    display: flex;
+}
+#page3-box5-part1 {
+    text-align: right;
+    flex-basis: 40%;
+}
+#page3-box5-part2 {
+    margin: auto;
+    flex-basis: 60%;
+}
+#image-indian {
+    max-width: 30%;
+}
+/* box content 6 */
+#page3-box6 {
+    background-color: #5D4160;
+    display: flex;
+}
+#page3-box6-part1 {
+    text-align: right;
+    flex-basis: 40%;
+}
+#page3-box6-part2 {
+    margin: auto;
+    flex-basis: 60%;
+}
+
+
+/* PAGE 4 */
+#page4 {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
+
+/* container where game will happen in */
+#game-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+/* item that is going to be spawned */
+.item {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/*for responsive menu*/
+#hamIcon {
+    display: none;
+}
+
+.menuShow {
+    display: block;
+}
+
+@media screen and (max-width:800px) {
+    nav ul li {
+        display: block;
+    }
+
+    /*make a menu items vertical*/
+    #hamIcon {
+        display: block;
+    }
+
+    /* unhide menu icon */
+    nav ul {
+        display: none;
+    }
+
+    /*hide the menu item list*/
+}
