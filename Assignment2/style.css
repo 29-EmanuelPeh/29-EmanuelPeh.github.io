@@ -81,6 +81,7 @@ img {
     transition: background-color 0.3s ease;
 }
 
+/* mouse hover animation */
 .btn:hover {
     background-color: #0c0d49;
 }
@@ -123,33 +124,31 @@ img {
 
 
 /* PAGE 1 */
+/* box content 1 */
 #page1-box1 {
     background-color: black;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-
 #page1-box1-part1 {
     flex-basis: 60%;
 }
-
 #page1-box1-part2 {
     margin: auto;
     flex-basis: 40%;
     padding: 0;
 }
 
+/* box content 2 */
 #page1-box2 {
     display: flex;
     background-color: #0A0E4F;
 }
-
 #page1-box2-part1 {
     flex-basis: 50%;
     text-align: left;
 }
-
 #page1-box2-part2 {
     margin: auto;
     flex-basis: 50%;
@@ -157,6 +156,7 @@ img {
 
 
 /* PAGE 2 */
+/* box content 1 */
 #page2-box1 {
     display: flex;
     flex-direction: column;
@@ -164,98 +164,86 @@ img {
     padding: 10%;
     margin: 10%;
 }
-
+/* box content 2 */
 #page2-box2 {
     display: flex;
     background-color: #014778;
     align-items: center;
 }
-
 #page2-box2-part1 {
     text-align: left;
     flex-basis: 60%;
 }
-
 #page2-box2-part2 {
     margin: auto;
     flex-basis: 40%;
 }
-
+/* box content 3 */
 #page2-box3 {
     display: flex;
     background-color: #012A78;
     align-items: center;
 }
-
 #page2-box3-part1 {
     text-align: right;
     flex-basis: 60%;
 }
-
 #page2-box3-part2 {
     margin: auto;
     flex-basis: 40%;
 }
-
+/* box content 4 */
 #page2-box4 {
     display: flex;
     background-color: #010D78;
     align-items: center;
 }
-
 #page2-box4-part1 {
     text-align: left;
     flex-basis: 60%;
 }
-
 #page2-box4-part2 {
     margin: auto;
     flex-basis: 40%;
 }
-
+/* box content 5 */
 #page2-box5 {
     display: flex;
     background-color: #220070;
     align-items: center;
 }
-
 #page2-box5-part1 {
     text-align: right;
     flex-basis: 60%;
 }
-
 #page2-box5-part2 {
     margin: auto;
     flex-basis: 40%;
 }
-
+/* box content 6 */
 #page2-box6 {
     display: flex;
     background-color: #3F0070;
     align-items: center;
 }
-
 #page2-box6-part1 {
     text-align: left;
     flex-basis: 60%;
 }
-
 #page2-box6-part2 {
     margin: auto;
     flex-basis: 40%;
 }
-
+/* box content 7 */
 #page2-box7 {
     display: flex;
     background-color: #5D0070;
     align-items: center;
 }
-
 #page2-box7-part1 {
     text-align: right;
     flex-basis: 60%;
 }
-
 #page2-box7-part2 {
     margin: auto;
     flex-basis: 40%;
@@ -263,47 +251,42 @@ img {
 
 
 /* PAGE 3 */
+/* box content 1 */
 #page3-box1 {
     background-color: rgb(57, 8, 102);
     display: flex;
     flex-direction: column;
     padding: 10%;
 }
-
 #page3-box1-part1 {
     padding-bottom: 5%;
 }
-
 #page3-box1-part2 {
     padding-top: 5%;
     font-size: 200%;
 }
-
+/* box content 2 */
 #page3-box2 {
     background-color: #460058;
     display: flex;
 }
-
 #page3-box2-part1 {
     text-align: right;
     flex-basis: 40%;
 }
-
 #page3-box2-part2 {
     margin: auto;
     flex-basis: 60%;
 }
-
+/* box content 3 */
 #page3-box3 {
     background-color: #580042;
     display: flex;
 }
-
 #page3-box3-part1 {
     text-align: right;
     flex-basis: 40%;
 }
-
 #page3-box3-part2 {
     margin: auto;
     flex-basis: 60%;
@@ -311,32 +294,28 @@ img {
 #image-selfloath {
     max-width: 50%;
 }
-
+/* box content 4 */
 #page3-box4 {
     background-color: #58001D;
     display: flex;
 }
-
 #page3-box4-part1 {
     text-align: right;
     flex-basis: 40%;
 }
-
 #page3-box4-part2 {
     margin: auto;
     flex-basis: 60%;
 }
-
+/* box content 5 */
 #page3-box5 {
     background-color: #470000;
     display: flex;
 }
-
 #page3-box5-part1 {
     text-align: right;
     flex-basis: 40%;
 }
-
 #page3-box5-part2 {
     margin: auto;
     flex-basis: 60%;
@@ -344,17 +323,15 @@ img {
 #image-indian {
     max-width: 30%;
 }
-
+/* box content 6 */
 #page3-box6 {
     background-color: #5D4160;
     display: flex;
 }
-
 #page3-box6-part1 {
     text-align: right;
     flex-basis: 40%;
 }
-
 #page3-box6-part2 {
     margin: auto;
     flex-basis: 60%;
@@ -369,6 +346,7 @@ img {
     padding: 10%;
 }
 
+/* container where game will happen in */
 #game-container {
     position: relative;
     width: 400px;
@@ -379,7 +357,7 @@ img {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     overflow: hidden;
 }
-
+/* item that is going to be spawned */
 .item {
     position: absolute;
     width: 30px;
