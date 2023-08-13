@@ -45,6 +45,7 @@ img {
     width: 100%;
 }
 
+/* for nav bar */
 .home-top {
     display: flex;
     flex-direction: column;
@@ -53,7 +54,6 @@ img {
     align-items: center;
     justify-content: space-evenly;
 }
-
 .home-top header,
 .home-top nav {
     padding-top: 20px;

@@ -6,7 +6,7 @@ const page4btn = document.querySelector("#page4btn");
 var allpages = document.querySelectorAll(".page");
 //select all subtopic pages
 console.log(allpages);
-show(4);
+show(1);
 // // Initial check on page load
 reveal();
 
